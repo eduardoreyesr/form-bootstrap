@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Bootstrap 5.3.3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- stilos para icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- IMAGEN PRINCIPAL -->
+    <header>
+        <img src="https://picsum.photos/1720/760" class="img-fluid" 
+        alt="Imagen Central">
+    </header>
+    <!-- MENU  -->
+    <nav class="navbar navbar-dark bg-primary bg-gradient">​
+        <div class="container-fluid">​
+            <a class="navbar-brand">Marca de la Web Site</a>​
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">​
+                <span class="navbar-toggler-icon"></span>​
+              </button>​
+            <div class="collapse navbar-collapse" id="navbarNav">​
+                <ul class="navbar-nav">​
+                  <li class="nav-item">​
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>​
+                  </li>​
+                  <li class="nav-item">​
+                    <a class="nav-link active" href="#">Carta</a>​
+                  </li>​
+                  <li class="nav-item">​
+                    <a class="nav-link active" href="#">Noticias</a>​
+                  </li>​
+                  <li class="nav-item dropdown">​
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">​
+                    Reservaciones
+                    </a>​
+                    <ul class="dropdown-menu bg-primary bg-gradient">​
+                      <li><a class="dropdown-item" href="#">Personas</a></li>​
+                      <li><a class="dropdown-item" href="#">Empresas</a></li>​
+                      <li><a class="dropdown-item" href="#">Otros</a></li>​
+                    </ul>​
+                  </li>​  
+                </ul>​
+              </div>​    
+          </div>​
+      </nav> 
+<!-- FORMULARIO -->
+    <section id="contacto" class="bg-primary-subtle">
+        <div class="container py-5">
+            <div class="col-md-12">
+                <h1 class="text-center">Contáctanos</h1>                
+            </div>
+        </div>
+        <div class="container">
+                    <form action="https://formsubmit.co/vaxayed126@eoilup.com" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="nombres" class="form-label" >Nombres</label>
+                                <input type="text" class="form-control border border-primary-subtle" required 
+                                id="nombres" name="Nombres">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="apellidos" class="form-label" >Apellidos</label>
+                                <input type="text" class="form-control border border-primary-subtle" required 
+                                id="apellidos" name="Apellidos">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label" >Email</label>
+                                <input type="email" class="form-control border border-primary-subtle" required 
+                                id="email" name="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="celular" class="form-label" >Celular</label>
+                                <input type="tel" class="form-control border border-primary-subtle" required 
+                                id="celular" name="Celular">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="turno" class="form-label">Turno</label>
+                                <select class="form-control border border-primary-subtle" name="Turno" id="turno">
+                                    <option selected disabled>Seleccionar Turno</option>
+                                    <option value="Mañana">Mañana</option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Noche">Noche</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="aplicacion" class="form-label" >App Videollamada</label>
+                                <select class="form-control border border-primary-subtle" name="Aplicacion" id="aplicacion">
+                                    <option selected disabled>Seleccionar Aplicación</option>
+                                    <option value="Zoom">Zoom</option>
+                                    <option value="Meet">Meet</option>
+                                    <option value="Teams">Teams</option>
+                                </select>
+                            </div>                                       
+                            <div class="col-md-6">
+                                <label for="fecha" class="form-label" >Fecha</label>
+                                <input type="date" class="form-control border border-primary-subtle" required 
+                                id="fecha" name="Fecha" value="2024-12-10">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="hora" class="form-label" >Hora</label>
+                                <input type="time" class="form-control border border-primary-subtle" required 
+                                id="hora" name="Hora" value="09:00:00">
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex py-4 justify-content-end">
+                            <div class="p-2">
+                                <button type="reset" class="btn btn-outline-danger">Cancelar</button>
+                            </div>
+                            <div class="p-2">
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+         
+                <!-- <div id="map" class="contact-map col-lg-5">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.964602458222!2d-77.03540332536656!3d-12.04595651140863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d5aa7eb1%3A0x16061e0b481e22aa!2sPlaza%20Mayor%20de%20Lima!5e0!3m2!1ses-419!2spe!4v1733833481618!5m2!1ses-419!2spe" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br><br>
+                    
+                    </div>
+                </div> -->
+        </div>
+    </section>
+    <!-- MAPA  -->
+    <section id="mapa">
+        <div class="row">
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.964602458222!2d-77.03540332536656!3d-12.04595651140863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d5aa7eb1%3A0x16061e0b481e22aa!2sPlaza%20Mayor%20de%20Lima!5e0!3m2!1ses-419!2spe!4v1733833481618!5m2!1ses-419!2spe" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+     <footer class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+                <p>&copy; 2024 Right Reserved Company Perú.</p>          
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-body-emphasis" href="#">
+                            <i class="bi bi-facebook" style="color: white;"></i>
+                        </a></li>
+                        <li class="ms-3">
+                        <a class="link-body-emphasis" href="#">
+                            <i class="bi bi-instagram" style="color: white;"></i>
+                        </a> </li>
+                        <li class="ms-3">
+                        <a class="link-body-emphasis" href="#">
+                            <i class="bi bi-twitter-x" style="color: white;"></i>
+                        </a>   </li> 
+                        <li class="ms-3">             
+                        <a class="link-body-emphasis" href="#">
+                            <i class="bi bi-tiktok" style="color: white;"></i>
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
